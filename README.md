@@ -1,54 +1,17 @@
-# React + TypeScript + Vite
+# react-forms-validation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of dynamic and reusable form components built with React, designed to handle various input types seamlessly. This project leverages powerful tools like:
 
-Currently, two official plugins are available:
+useRef & useState : For managing form state and accessing input elements efficiently.
+React Hook Form : Simplifying form handling with minimal re-renders and easy integration.
+Zod : Providing robust validation schemas to ensure data integrity and user-friendly error messages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features:
 
-## Expanding the ESLint configuration
+- 📝 Create forms for different input types (text, number, dropdowns, checkboxes, etc.).
+- ✅ Real-time validation using Zod schemas.
+- 🔄 Effortless state management with React's useState and useRef.
+- 🔧 Highly customizable and reusable components.
+- 🛠️ Developer-friendly with clear error feedback and optimized performance.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Perfect for developers looking to implement scalable and maintainable forms in their React applications!
